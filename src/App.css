@@ -1,38 +1,170 @@
+@font-face {
+  font-family: anc;
+  src: url("./assets/reg.ttf");
+}
+
+html {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(./assets/4.jpg);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  color: orange;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 2px outset lightskyblue;
+  border-radius: 31px;
+  font-family: anc;
+  text-align: center;
+  background-image: url("./assets/8.jpg");
+  background-size: cover;
+  background-position-y: 9em;
+  font-size: 2rem;
+  text-shadow: 0 0 6px white, 0 0 15px lightskyblue;
+  cursor: default;
+}
+
+.App-header img {
+  width: 20%;
+  padding-top: 7px;
+  color: orange;
+}
+
+.container {
+  min-height: 200px;
+  text-shadow: 0 0 3px black, 0 0 15px black;
+  padding: 13px;
+  background-image: url(./assets/8.jpg);
+  background-size: cover;
+  background-position-y: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-bottom: 8%;
+  margin-left: 13%;
+  margin-right: 13%;
+  text-align: center;
+  font-size: 33px;
+  font-family: anc;
+  border: 2px outset lightskyblue;
+  border-radius: 11px;
+  cursor: default;
+  animation-name: seas;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes seas {
+  50% {
+    border-radius: 13%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.container p {
+  font-size: 63px;
+  color: white;
+  text-shadow: 0 0 3px black, 0 0 15px orange;
+}
+
+.container img {
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 25%;
+}
+
+.Nav {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8px;
+  text-align: center;
+  height: 120px;
+  width: 120px;
+  overflow-x: hidden;
+  border-radius: 15px;
+  size: 2em;
+  text-decoration: none;
+  text-shadow: 0 0 40px lightskyblue, 0 0 3px grey;
+  border-radius: 61px;
+  cursor: default;
+}
+
+.NavLink {
+  margin-bottom: 13px;
+  color: lightblue;
+  font-family: anc;
+  background-image: url(./assets/8.jpg);
+  background-size: cover;
+  font-size: 1rem;
+  border: 3px outset lightskyblue;
+  border-radius: 11px;
+  text-shadow: 0 0 3px black, 0 0 5px black;
+  padding: 1px;
+  cursor: default;
+}
+
+.NavLink:hover {
+  text-decoration: overline orange;
+}
+
+.footer {
+  position: fixed;
+  padding: 6px;
+  z-index: 0;
+  bottom: 2px;
+  right: 98px;
+  overflow-x: hidden;
+  color: lightblue;
+  font-family: anc;
+  background-position-y: center;
+  font-size: 1rem;
+  border-radius: 12px;
+  text-shadow: 0 0 3px lightskyblue, 0 -5px 5px white;
+}
+
+.footer:hover {
+  cursor: default;
+}
+
+a:hover {
+  cursor: default;
+  color: orange;
+}
+
+a {
+  text-decoration: none;
+  cursor: default;
+  color: lightblue;
+}
+
+h2 {
+  font-family: anc;
+  cursor: default;
+  color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  margin: 13px;
+  font-size: 40px;
+  text-shadow: -3px 3px 13px lightskyblue, 0 0 7px white;
+  animation-name: over;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes over {
+  12% {
+    color: black;
+    text-shadow: 9px 9px -13px lightskyblue, 7px -4px 2px white;
+  }
+
+  13% {
+    color: whitesmoke;
+  }
+
+  14% {
+    color: black;
   }
 }
