@@ -149,7 +149,7 @@ h2 {
   font-size: 40px;
   text-shadow: -3px 3px 13px lightskyblue, 0 0 7px white;
   animation-name: over;
-  animation-duration: 4s;
+  animation-duration: 3ms;
   animation-iteration-count: infinite;
   animation-play-state: running;
 }
